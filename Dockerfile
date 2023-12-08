@@ -2,16 +2,16 @@
 FROM python:3.11
 
 # 
-WORKDIR /code/frontend
+WORKDIR /code/
 
 # 
-COPY ./requirements.txt /code/frontend/requirements.txt
+COPY ./requirements.txt /code/requirements.txt
 
 # 
 RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
 # 
-COPY ./ /code/frontend/
+COPY ./ /code/
 
 # 
-CMD ["python"]
+CMD ["python", "app.py"]
