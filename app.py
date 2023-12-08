@@ -18,5 +18,5 @@ with gr.Blocks() as demo:
     gr.ChatInterface(
         chat, additional_inputs=[version]
     )
-
-demo.launch(server_name='0.0.0.0',server_port='80')
+# 7860
+demo.launch(server_name='0.0.0.0')
